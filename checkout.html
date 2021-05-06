@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="checkout.css">
 </head>
 
 <body>
@@ -574,359 +572,72 @@
             </ul>
         </div>
     </section>
-    <section class="main my-container">
-        <nav class="main__saidbar">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Category
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul class="accordion-body__menu">
-                                <li><a href="#" class="accordion-body__menu__item">Accessories</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Bags</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Denim</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Hoodies & Sweatshirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Jackets & Coats</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Pants</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Polos</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shoes</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shorts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Sweaters & Knits</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">T-Shirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Tanks</a></li>
-                            </ul>
-                        </div>
+    <nav class="my-container">
+        <ul class="requisite">
+            <li class="requisite__item">
+                <details class="requisite__item__content" open>
+                    <summary class="requisite__item__content__name">01.&nbsp;Shipping Adress</summary>
+                    <div class="requisite__item__block">
+                        <form class="requisite__item__register">
+                            <h3 class="requisite__heading">Check as a guest or register</h3>
+                            <p class="requisite__text">Register with us for future convenience</p>
+                            <input type="radio" name="choice" class="requisite__item__register__choice">
+                            <span class="requisite__item__register__choice__text">checkout as guest<br></span>
+                            <input type="radio" name="choice" checked class="requisite__item__register__choice"
+                                style="margin-bottom: 33px;">
+                            <span class="requisite__item__register__choice__text">register<br></span>
+                            <h3 class="requisite__heading">register and save time!</h3>
+                            <p class="requisite__text">Register with us for future convenience</p>
+                            <a href="#" class="requisite__item__register__link">Fast and easy checkout</a>
+                            <a href="#" class="requisite__item__register__link">Easy access to your order history and
+                                status</a>
+                            <button class="requisite__button requisite__item__register__continue">Continue</button>
+                        </form>
+                        <form class="requisite__item__login">
+                            <h3 class="requisite__heading">Already registed?</h3>
+                            <p class="requisite__text" style="margin-bottom: 27px;">Please log in below</p>
+                            <h4 class="requisite__item__login__enter-heading">EMAIL ADDRESS</h4>
+                            <input type="email" class="requisite__item__login__enter">
+                            <h4 class="requisite__item__login__enter-heading">PASSWORD</h4>
+                            <input type="text" class="requisite__item__login__enter">
+                            <p class="requisite__item__login__warning">* Required Fileds</p>
+                            <div class="requisite__item__login__sent">
+                                <button type="submit" class="requisite__button requisite__item__login__sent__submit">Log
+                                    in</button>
+                                <a href="#" class="requisite__item__login__sent__fogot">Forgot
+                                    Password ?</a>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            BRAND
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul class="accordion-body__menu">
-                                <li><a href="#" class="accordion-body__menu__item">Accessories</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Bags</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Denim</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Hoodies & Sweatshirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Jackets & Coats</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Pants</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Polos</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shoes</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shorts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Sweaters & Knits</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">T-Shirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Tanks</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Designer
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul class="accordion-body__menu">
-                                <li><a href="#" class="accordion-body__menu__item">Accessories</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Bags</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Denim</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Hoodies & Sweatshirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Jackets & Coats</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Pants</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Polos</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shoes</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Shorts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Sweaters & Knits</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">T-Shirts</a></li>
-                                <li><a href="#" class="accordion-body__menu__item">Tanks</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <section class="main__content">
-            <div class="main__content__filter-top">
-                <div class="main__content__block">
-                    <h3 class="main__content__block__heading">Trending now</h3>
-                    <ul class="main__content__block__menu">
-                        <li><a href="#" class="main__content__block__menu__item">Bohemian</a></li>
-                        <li><a href="#" class="main__content__block__menu__item">Floral</a></li>
-                        <li><a href="#" class="main__content__block__menu__item">Lace</a></li>
-                    </ul>
-                    <ul class="main__content__block__menu">
-                        <li><a href="#" class="main__content__block__menu__item">Floral</a></li>
-                        <li><a href="#" class="main__content__block__menu__item">Lace</a></li>
-                        <li><a href="#" class="main__content__block__menu__item">Bohemian</a></li>
-                    </ul>
-                </div>
-                <div class="main__content__block">
-                    <h3 class="main__content__block__heading">Size</h3>
-                    <div class="main__content__block__size">
-                        <div class="main__content__block__size__group">
-                            <input type="checkbox" id="sizeXXS">
-                            <label for="sizeXXS" class="main__content__block__size__group__code">XXS</label>
-                        </div>
-                        <div class="main__content__block__size__group">
-                            <input type="checkbox" id="sizeXS">
-                            <label for="sizeXS" class="main__content__block__size__group__code">XS</label>
-                        </div>
-                        <div class="main__content__block__size__group">
-                            <input type="checkbox" id="sizeS">
-                            <label for="sizeS" class="main__content__block__size__group__code">S</label>
-                        </div>
-                        <div class="main__content__block__size__group">
-                            <input type="checkbox" id="sizeM">
-                            <label for="sizeM" class="main__content__block__size__group__code">M</label>
-                        </div>
-                        <div class="main__content__block__size__group">
-                            <input type="checkbox" id="sizeL">
-                            <label for="sizeL" class="main__content__block__size__group__code">L</label>
-                        </div>
-                        <div class="main__content__block__size__group">
-                            <input type="checkbox" id="sizeXL">
-                            <label for="sizeXL" class="main__content__block__size__group__code">XL</label>
-                        </div>
-                        <div class="main__content__block__size__group">
-                            <input type="checkbox" id="sizeXXL">
-                            <label for="sizeXXL" class="main__content__block__size__group__code">XXL</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="main__content__block">
-                    <h3 class="main__content__block__heading">Price</h3>
-                    <div class="main__content__block__line-grey"></div>
-                    <div class="main__content__block__line-red"></div>
-                    <div class="main__content__block__range">
-                        <span>$52</span>
-                        <span>$400</span>
-                    </div>
-                </div>
-            </div>
-            <div class="main__content__filter-bottom">
-                <div class="main__content__filter-bottom__block">
-                    <span class="main__content__filter-bottom__block__item">Sort By</span>
-                    <details>
-                        <summary
-                            class="main__content__filter-bottom__block__item main__content__filter-bottom__block__menu">
-                            Name</summary>
-                    </details>
-                </div>
-                <div class="main__content__filter-bottom__block">
-                    <span class="main__content__filter-bottom__block__item">Show</span>
-                    <details>
-                        <summary
-                            class="main__content__filter-bottom__block__item main__content__filter-bottom__block__menu">
-                            09</summary>
-                    </details>
-                </div>
-            </div>
-            <div class="main__content__fetured">
-                <div class="fetured__article">
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured13.png" alt="Fetured13" class="fetured__article__card__image">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured14.png" alt="Fetured14" class="fetured__article__card__image">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured3.png" alt="Fetured3" class="fetured__article__card__image">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured15.png" alt="Fetured15" class="fetured__article__card__image">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured8.png" alt="Fetured8" class="fetured__article__card__image"
-                                style="object-position: center 10%;">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured16.png" alt="Fetured16" class="fetured__article__card__image">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured6.png" alt="Fetured6" class="fetured__article__card__image"
-                                style="object-position: center 10%;">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured17.png" alt="Fetured17" class="fetured__article__card__image"
-                                style="object-position: center 20%;">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                    <figure class="fetured__article__card">
-                        <a href="#">
-                            <img src="img/Fetured18.png" alt="Fetured18" class="fetured__article__card__image">
-                            <div class="fetured__article__card__fon"></div>
-                            <figcaption>
-                                <p class="fetured__article__card__text">MANGO PEOPLE T-SHIRT</p>
-                                <p class="fetured__article__card__price">$52.00</p>
-                            </figcaption>
-                        </a>
-                        <a href="#" class="fetured__article__card__cart">
-                            <img src="img/Cart-White.svg" alt="Cart" class="fetured__article__card__cart__image">
-                            <p class="fetured__article__card__cart__text">Add to Cart</p>
-                        </a>
-                    </figure>
-                </div>
-            </div>
-            <div class="main__content__pages">
-                <ul class="main__content__pages__list">
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link"><i class="fas fa-angle-left"></i></a></li>
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link">1</a></li>
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link">2</a></li>
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link">3</a></li>
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link">4</a></li>
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link">5</a></li>
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link">6</a></li>
-                    <li class="main__content__pages__list__item">.....</li>
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link">20</a></li>
-                    <li class="main__content__pages__list__item"><a href="#"
-                            class="main__content__pages__list__item__link"><i class="fas fa-angle-right"></i></a></li>
-                </ul>
-                <a href="#" class="main__content__pages__all">View All</a>
-            </div>
-        </section>
-    </section>
-    <section class="advantages">
-        <div class="advantages__content my-container">
-            <article class="advantages__content__block">
-                <img src="img/Car-Icon.png" alt="Car-Icon" class="advantages__content__block__icon">
-                <div class="advantages__content__block__description">
-                    <h3 class="advantages__content__block__heading">Free Delivery</h3>
-                    <p class="advantages__content__block__text">Worldwide delivery on all. Authorit tively morph
-                        next-generation innov tion with extensive models.</p>
-                </div>
-            </article>
-            <article class="advantages__content__block">
-                <img src="img/Discount-Icon.png" alt="Discount-Icon" class="advantages__content__block__icon"
-                    style="margin-right: 6px;">
-                <div class="advantages__content__block__description">
-                    <h3 class="advantages__content__block__heading">Sales & discounts</h3>
-                    <p class="advantages__content__block__text">Worldwide delivery on all. Authorit tively morph
-                        next-generation innov tion with extensive models.</p>
-                </div>
-            </article>
-            <article class="advantages__content__block">
-                <img src="img/Crown-Icon.png" alt="Crown-Icon" class="advantages__content__block__icon">
-                <div class="advantages__content__block__description">
-                    <h3 class="advantages__content__block__heading">Quality assurance</h3>
-                    <p class="advantages__content__block__text">Worldwide delivery on all. Authorit tively morph
-                        next-generation innov tion with extensive models.</p>
-                </div>
-            </article>
-        </div>
-    </section>
+                </details>
+            </li>
+            <li class="requisite__item">
+                <details class="requisite__item__content">
+                    <summary class="requisite__item__content__name">02.&nbsp;BILLING INFORMATION</summary>
+                </details>
+            </li>
+            <li class="requisite__item">
+                <details class="requisite__item__content">
+                    <summary class="requisite__item__content__name">03.&nbsp;SHIPPING INFORMATION</summary>
+                </details>
+            </li>
+            <li class="requisite__item">
+                <details class="requisite__item__content">
+                    <summary class="requisite__item__content__name">04.&nbsp;SHIPPING METHOD</summary>
+                </details>
+            </li>
+            <li class="requisite__item">
+                <details class="requisite__item__content">
+                    <summary class="requisite__item__content__name">05.&nbsp;PAYMENT METHOD</summary>
+                </details>
+            </li>
+            <li class="requisite__item">
+                <details class="requisite__item__content">
+                    <summary class="requisite__item__content__name">06.&nbsp;ORDER REVIEW</summary>
+                </details>
+            </li>
+        </ul>
+    </nav>
     <section class="comment">
         <div class="comment__fon">
             <div class="comment__container my-container">
@@ -1031,9 +742,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/31cd1bd6cf.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
