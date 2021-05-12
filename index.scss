@@ -106,6 +106,10 @@
                 color: #f16d7f;
                 text-decoration: none;
             }
+
+            &:hover {
+                transform: scale(1.02);
+            }
         }
     }
 }

@@ -123,6 +123,11 @@
   text-decoration: none;
 }
 
+.offers__group__block:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .advantages {
   display: -webkit-box;
   display: -ms-flexbox;

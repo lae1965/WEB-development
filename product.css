@@ -225,6 +225,8 @@
   border: 1px solid #ef5b70;
   border-radius: 3px;
   text-decoration: none;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
 }
 
 .main__content__pages__all:hover {
@@ -288,11 +290,16 @@
 }
 
 .accordion-body__menu__item {
+  display: block;
   font-size: 14px;
   line-height: 33px;
   font-weight: 400;
   color: #6f6e6e;
   text-decoration: none;
+}
+
+.accordion-body__menu__item:hover {
+  color: #f16d7f;
 }
 
 .advantages {

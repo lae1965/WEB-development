@@ -165,6 +165,8 @@
           align-items: center;
   text-decoration: none;
   padding: 19px 38px;
+  -webkit-transition: background-color .3s, color 0.3s;
+  transition: background-color .3s, color 0.3s;
 }
 
 .shopping__buttons__item:hover {
@@ -251,6 +253,8 @@
   margin-top: 24px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  -webkit-transition: background-color .3s, color 0.3s;
+  transition: background-color .3s, color 0.3s;
 }
 
 .execution__button:hover {
@@ -347,6 +351,8 @@
   background-color: #f16d7f;
   color: #ffffff;
   border: 1px solid #f16d7f;
+  -webkit-transition: background-color .3s, color 0.3s;
+  transition: background-color .3s, color 0.3s;
 }
 
 .execution__checkout__proceed:hover {

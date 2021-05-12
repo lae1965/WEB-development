@@ -37,6 +37,8 @@
   border: 1px solid #eaeaea;
   border-radius: 0;
   margin-top: 23px;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
 }
 
 .requisite__button:hover {

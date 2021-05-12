@@ -202,6 +202,7 @@
                 border: 1px solid #ef5b70;
                 border-radius: 3px;
                 text-decoration: none;
+                transition: color .3s, background-color .3s;
 
                 &:hover {
                     color: #ef5b70;
@@ -268,11 +269,16 @@
             padding-left: 0;
 
             &__item {
+                display: block;
                 font-size: 14px;
                 line-height: 33px;
                 font-weight: 400;
                 color: #6f6e6e;
                 text-decoration: none;
+
+                &:hover {
+                    color: #f16d7f;
+                }
             }
         }
     }
