@@ -115,6 +115,8 @@
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 0;
+  padding-left: 10px;
+  outline: none;
 }
 
 .requisite__item__login__enter-heading {

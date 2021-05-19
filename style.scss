@@ -108,6 +108,7 @@
                     letter-spacing: 0.35px;
                     color: #222222;
                     padding-left: 16px;
+                    outline: none;
 
                     &::placeholder {
                         color: #a4a4a4;
@@ -755,6 +756,7 @@
                 background-color: #e1e1e1;
                 color: #222224;
                 padding-left: 28px;
+                outline: none;
 
                 &::placeholder {
                     opacity: 0.67;

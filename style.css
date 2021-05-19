@@ -130,6 +130,7 @@
   letter-spacing: 0.35px;
   color: #222222;
   padding-left: 16px;
+  outline: none;
 }
 
 .header__top__left__seach__text::-webkit-input-placeholder {
@@ -884,6 +885,7 @@
   background-color: #e1e1e1;
   color: #222224;
   padding-left: 28px;
+  outline: none;
 }
 
 .comment__sent__email__enter::-webkit-input-placeholder {
