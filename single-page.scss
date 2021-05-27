@@ -1,3 +1,12 @@
+@mixin leftColor ($color) {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: $color;
+    display: inline-block;
+    margin-right: 11px;
+}
+
 .slide {
     height: 777px;
     background-color: #f7f7f7;
@@ -174,12 +183,52 @@
             }
 
             &__color::before {
-                content: "";
-                width: 12px;
-                height: 12px;
-                background-color: #ef5b70;
-                display: inline-block;
-                margin-right: 11px;
+                @include leftColor(#ef5b70);
+            }
+
+            &__menu {
+                list-style-type: none;
+                border: 1px solid #eaeaea;
+
+                &__link {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #bcbcbc;
+                    text-decoration: none;
+                    display: block;
+                    padding-left: 15px;
+
+                    &:hover {
+                        background-color: #bcbcbc;
+                        color: #ffffff;
+                    }
+                }
+
+                &__item {
+                    &:first-child>a::before {
+                        @include leftColor(#ef5b70);
+                    }
+
+                    &:nth-child(2)>a::before {
+                        @include leftColor(#000000);
+                    }
+
+                    &:nth-child(3)>a::before {
+                        @include leftColor(#ffffff);
+                        border: 1px solid #bcbcbc;
+                        width: 10px;
+                        height: 10px;
+                    }
+
+                    &:nth-child(4)>a::before {
+                        @include leftColor(blue);
+                    }
+
+                    &:last-child>a::before {
+                        @include leftColor(yellow);
+                    }
+
+                }
             }
         }
     }

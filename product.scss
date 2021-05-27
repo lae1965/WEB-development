@@ -47,6 +47,10 @@
                     font-weight: 400;
                     color: #6f6e6e;
                     text-decoration: none;
+
+                    &:hover {
+                        color: #f16d7f;
+                    }
                 }
             }
 

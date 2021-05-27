@@ -48,11 +48,11 @@
 
 .requisite__item {
   border-bottom: 1px solid #e8e8e8;
-  padding: 33px 0;
 }
 
 .requisite__item__content__name {
   display: block;
+  padding: 33px 0;
 }
 
 .requisite__item__content__name::-webkit-details-marker {

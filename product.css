@@ -59,6 +59,10 @@
   text-decoration: none;
 }
 
+.main__content__block__menu__item:hover {
+  color: #f16d7f;
+}
+
 .main__content__block__size {
   display: -webkit-box;
   display: -ms-flexbox;
